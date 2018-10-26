@@ -36,7 +36,8 @@ for(var i = 0; i < 100; i++) {
         createdAt: moment(faker.date.past()).fromNow().toString(),
         //report: faker.lorem.sentence(),
         roomID: randNumber(10),
-        photo: faker.image.people()
+        photo: faker.image.people(),
+        report: faker.lorem.sentence()
     };
     db.saveToUserReviewtable(userreview, (err) => {
         if(err){
