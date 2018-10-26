@@ -16,8 +16,8 @@ var saveToUserReviewtable = (data, cb) => {
 }
 
 var saveToRatingtable = (data, cb) => {
-    var sql = 'INSERT INTO rating (numberOfReviews, overallrate, accuracy, communication, cleanliness, location, check_in, value) VALUES (?,?,?,?,?,?,?,?)';
-    con.query(sql, [data.numberOfReviews, data.overallrate, data.accuracy, data.communication, data.cleanliness, data.location, data.check_in, data.value], (err) => {
+    var sql = 'INSERT INTO rating (numberOfReviews, overallrate, accuracy, communication, cleanliness, location, check_in, value, report) VALUES (?,?,?,?,?,?,?,?,?)';
+    con.query(sql, [data.numberOfReviews, data.overallrate, data.accuracy, data.communication, data.cleanliness, data.location, data.check_in, data.value, data.report], (err) => {
         if(err) {
             cb(err, null);
         }

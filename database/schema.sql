@@ -20,6 +20,7 @@ create table rating (
 
 create table userReview (
     ID int unsigned not null auto_increment,
+    report text,
     photo text, 
     username text not null,
     review text not null, 
