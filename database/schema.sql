@@ -26,10 +26,9 @@ create table userReview (
     review text not null, 
     rateNumber smallint,
     createdAt text,
-    report text,
-    roomID int unsigned not null,
+    homeID int unsigned not null,
     PRIMARY KEY (ID),
-    FOREIGN KEY (roomID) REFERENCES rating(ID)
+    FOREIGN KEY (homeID) REFERENCES rating(ID)
 );
 
 
