@@ -7,7 +7,7 @@ module.exports = {
         "import"
     ],
     "rules": {
-        "react/destructuring-assignment": [<enabled/>, 'never'],
+        // "react/destructuring-assignment": [<enabled/>, 'never'],
         "no-console": 0
     },
     "env": {

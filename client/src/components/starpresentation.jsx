@@ -2,49 +2,39 @@ import React from 'react';
 
 
 class RateStarPresentation extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state ={
+    this.state = {
       fullStars: [],
-      emptyStars: []
+      emptyStars: [],
     };
     this.createStar = this.createStar.bind(this);
   }
-  componentDidMount(){
+
+  componentDidMount() {
     this.createStar();
   }
+
   createStar() {
-    let fullStars = [];
-    let emptyStars = [];
-    for(let i = 0; i < this.props.rate; i += 1) {
-      fullStars.push(<img src={'pics/star.png'} height="20" width="20"/>);
+    const fullStars = [];
+    const emptyStars = [];
+    for (let i = 0; i < this.props.rate; i += 1) {
+      fullStars.push(<img alt="hi" src="pics/star.png" height="20" width="20" />);
     }
-    for(let i = 0; i < 5-this.props.rate; i += 1) {
-      emptyStars.push(<img src={'pics/Star_empty.png'} height="20" width="20"/>);
+    for (let i = 0; i < 5 - this.props.rate; i += 1) {
+      emptyStars.push(<img alt="hi" src="pics/Star_empty.png" height="20" width="20" />);
     }
-    this.setState({fullStars});
-    this.setState({emptyStars});
-    
+    this.setState({ fullStars });
+    this.setState({ emptyStars });
   }
+
   render() {
-    return(
-      <div className='reviewColumn'>
-        {this.state.fullStars.map((item) => item)}
-        {this.state.emptyStars.map((item) => item)}
+    return (
+      <div className="reviewColumn">
+        {this.state.fullStars.map(item => item)}
+        {this.state.emptyStars.map(item => item)}
       </div>
-    ); 
+    );
   }
 }
-  //render() {
-    // return (
-    //   <div className='reviewColumn'>
-    //     <img src={'pics/star.png'} height="20" width="20"/>
-    //     <img src={'pics/star.png'} height="20" width="20"/>
-    //     <img src={'pics/star.png'} height="20" width="20"/>
-    //     <img src={'pics/star.png'} height="20" width="20"/>
-    //     <img src={'pics/star.png'} height="20" width="20"/>
-    //   </div>
-    // );
-  //}
-
 export default RateStarPresentation;

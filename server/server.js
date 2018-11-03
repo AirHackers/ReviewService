@@ -1,9 +1,9 @@
 const express = require('express');
-const path = require('path');
+const bodyParser = require('body-parser');
 const db = require('./../database/index.js');
 
 const app = express();
-var bodyParser = require('body-parser')
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
