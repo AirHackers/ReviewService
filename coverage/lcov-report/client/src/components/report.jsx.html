@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for client/src/components/report.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">client/src/components</a> report.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import ReactModal from 'react-modal';
+//ReactModal.setAppElement('#app');
+&nbsp;
+&nbsp;
+function Report(props) {
+    return (
+      &lt;div&gt;
+        &lt;ReactModal
+          isOpen={props.showModal}
+          contentLabel="Contact"
+          onRequestClose={props.handleCloseModal}
+          className="modal"
+          overlayClassName="overlay"
+        &gt;
+          &lt;div&gt;
+              &lt;img src="pics/cross.png" width="50" height="50" onClick={props.handleCloseModal}/&gt;
+            &lt;h3 className="font"&gt;Do you want to anonymously report this review?&lt;/h3&gt;
+            &lt;h5 className="font"&gt;If so, please choose one of the following reasons. Learn more&lt;/h5&gt;
+            &lt;br/&gt;
+            &lt;form&gt;
+              &lt;fieldset className="fieldset"&gt;
+                &lt;legend &gt;Select a maintenance drone&lt;/legend&gt;
+                &lt;div className="reviewExitModal"&gt;
+                  &lt;label className="reviewExitchild" for="huey"&gt;Inappropriate Content&lt;/label&gt;
+                  &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
+                  &lt;input className="reviewExitchild" type="radio" id="huey" name="drone" value="huey" checked /&gt;
+                &lt;/div&gt;
+                &lt;div&gt;This review contains violent, graphic, promotional, or otherwise offensive content.&lt;/div&gt;
+                &lt;div className='reviewParentLine'&gt;
+                  &lt;div className='reviewLine'&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div className="reviewExitModal"&gt;
+                  &lt;label className="reviewExitchild" for="dewey"&gt;Dishonest or hateful content&lt;/label&gt;
+                  &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
+                  &lt;input className="reviewExitchild" type="radio" id="dewey" name="drone" value="dewey" /&gt; 
+                &lt;/div&gt;
+                &lt;div&gt;This review is purposefully malicious and assaulting.&lt;/div&gt;
+                &lt;div className='reviewParentLine'&gt;
+                  &lt;div className='reviewLine'&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div className="reviewExitModal"&gt;
+                  &lt;label className="reviewExitchild" for="louie"&gt;Fake content&lt;/label&gt;
+                  &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
+                  &lt;input className="reviewExitchild" type="radio" id="louie" name="drone" value="louie" /&gt;
+                &lt;/div&gt;
+                &lt;div&gt;This review contains false information or may be fake.&lt;/div&gt;
+                &lt;div className='reviewParentLine'&gt;
+                  &lt;div className='reviewLine'&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+              &lt;div className="reviewExitModal"&gt;
+                &lt;div className="reviewExitchild reviewBackColor" onClick={props.handleCloseModal}&gt;Back&lt;/div&gt;
+                &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
+                &lt;button className="reviewExitchild reviewColor" onClick={props.handleCloseModal}&gt;Submit&lt;/button&gt;
+              &lt;/div&gt;
+                
+              &lt;/form&gt;
+&nbsp;
+          &lt;/div&gt;
+        &lt;/ReactModal&gt;
+      &lt;/div&gt;
+    );
+  }
+  
+  export default Report;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 02 2018 16:21:15 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

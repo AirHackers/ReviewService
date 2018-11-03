@@ -21,7 +21,7 @@ describe('<RateStarPresentation />', () => {
 })
 
 describe('<TopReviewBar />', () => {
-    it('should render correctly with no props', () => {
+    it('should render correctly with props', () => {
       const handleOpenModal= jest.fn();
       const data=[1];
       const component = shallow(<TopReviewBar data={data} handleOpenModal={handleOpenModal}/>);
@@ -30,7 +30,7 @@ describe('<TopReviewBar />', () => {
 })
 
 describe('<SearchReviews />', () => {
-  it('should render correctly with no props', () => {
+  it('should render correctly with props', () => {
     const handleOpenModal= jest.fn();
     const data=[1];
     const component = shallow(<SearchReviews data={data} handleOpenModal={handleOpenModal}/>);
@@ -39,7 +39,7 @@ describe('<SearchReviews />', () => {
 })
 
 describe('<TopBarTotalNumber />', () => {
-  it('should render correctly with no props', () => {
+  it('should render correctly with props', () => {
     const component = shallow(<TopBarTotalNumber totalNumber={2}/>);
     expect(component.exists()).toBe(true);
   });

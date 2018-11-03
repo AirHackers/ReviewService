@@ -1,30 +1,28 @@
-var express = require('express');
-var path =  require('path');
-var db = require('./../database/index.js');
-var app = express();
-// var bodyParser = require('body-parser')
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
+const express = require('express');
+const path = require('path');
+const db = require('./../database/index.js');
 
-app.use(express.static(__dirname + './../client/dist/'));
+const app = express();
+var bodyParser = require('body-parser')
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/api/reviews', (req, res) => {
-    function randNumber(num) {
-        return Math.floor((Math.random() * num) + 1);
+app.use('/api/homes/:homeID/', express.static(`${__dirname}./../client/dist/`));
+
+app.get('/api/homes/:homeID/allReviews', (req, res) => {
+  db.getData(req.params.homeID, (err, result) => {
+    if (err) {
+      throw err;
+    } else {
+      // console.log(result);
+      res.send(result);
     }
-    db.getData(randNumber(10), (err, result) => {
-        if(err) {
-            throw err;
-        } else {
-            console.log(result);
-            res.send('hi');
-        }
-    })
+  });
 });
 
 app.get('/f', (req, res) => {
-    console.log(__dirname);
-    res.send('hello');
-})
+  console.log(__dirname);
+  res.send('hello');
+});
 
 app.listen(3003, () => console.log('listening on port 3003'));
