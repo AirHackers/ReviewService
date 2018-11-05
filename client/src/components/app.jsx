@@ -39,7 +39,7 @@ class Reviewapp extends React.Component {
   }
 
   getData() {
-    const param = window.location.href.slice(32, -1);
+    const param = window.location.href.slice(28, -1);
     $.ajax({
       method: 'Get',
       url: `http://localhost:3003/api/homes/${param}/allReviews`,
