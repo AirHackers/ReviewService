@@ -24,7 +24,7 @@ class Reviewapp extends React.Component {
 
   onSearchhandle(text) {
     let searchedData = [];
-    const param = window.location.href.slice(32, -1);
+    const param = window.location.href.slice(28, -1);
     $.ajax({
       method: 'Get',
       url: `http://localhost:3003/api/homes/${param}/allReviews`,
@@ -32,6 +32,7 @@ class Reviewapp extends React.Component {
         this.setState({ data });
         searchedData = this.state.data.filter(item => item.review.includes(text));
         if (searchedData.length > 0) {
+          console.log(data);
           this.setState({ data: searchedData });
         }
       },
@@ -44,6 +45,7 @@ class Reviewapp extends React.Component {
       method: 'Get',
       url: `http://localhost:3003/api/homes/${param}/allReviews`,
       success: (data) => {
+        console.log(data);
         this.setState({ data });
       },
     });
