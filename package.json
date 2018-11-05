@@ -4,6 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "webpack --debug --watch",
+    "build": "webpack --mode production --devtool false",
     "lint": "eslint --ignore-path .gitignore . --fix",
     "seed": "node ./database/seed.js",
     "test": "jest --coverage --"

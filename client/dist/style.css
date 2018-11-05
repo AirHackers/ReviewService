@@ -1,0 +1,223 @@
+
+
+.reviewTopParent {
+    display: flex;
+    flex-direction:row;
+    border-color: #dfdfdf;
+}
+
+.reviewColumn {
+    width: 50%;
+}
+
+.reviewParentLine {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.reviewLine {
+    border-bottom: 1px solid var(--color-divider, #EBEBEB) !important;
+}
+
+.reviewParent {
+    display: flex;
+    flex-direction:row;
+    border-color: #dfdfdf;
+}
+.reviewCol {
+    width: 45%;
+}
+.reviewSerach {
+    display: flex;
+    flex-direction:row;
+    border-width: 1px;
+    border-color: #dfdfdf;
+    border-style: solid;
+    width: 180px;
+    height: 33px;
+}
+.reviewSerach:hover{
+    border-color: #26d069;
+}
+.reviewSearchInput {
+    outline: none;
+    border: 0px solid;
+    background-color: transparent;
+    width: 140px;
+    height: 22px;
+}
+
+
+.reviewTotalNumber {
+    /* font-size: 24px !important; */
+    font-weight: 800;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    letter-spacing: normal;
+    word-wrap: break-word;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    color: #484848;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none solid rgb(72, 72, 72);
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    column-rule-color: rgb(72, 72, 72);
+    perspective-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    caret-color: rgb(72, 72, 72);
+    border: 0px none rgb(72, 72, 72);
+    outline: rgb(72, 72, 72) none 0px;
+    /* font: normal normal 800 normal 24px / 30px Circular, -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif; */
+
+}
+
+.reviewUserImgPart{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.reviewUserImgPartCol {
+    width: 4%;
+}
+.reviewUserImgFlag {
+    height: 20px;
+    width: 20px;
+}
+
+.reviewSpace {
+    flex-grow: 1;
+}
+
+.reviewUserImgPartColparent {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.reviewUserImg {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.font {
+    font-family: Circular,“Helvetica Neue”,Helvetica,Arial,sans-serif;
+    color: #484848;
+}
+.date {
+    font-size: 12px;
+    width: 90px;
+    padding-top: 5px;
+}
+
+
+
+#Hide {
+    box-sizing: border-box;
+    margin-top: 16px;
+    color: rgb(0, 132, 137);
+    cursor: pointer;
+    height: 22px;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    column-rule-color: rgb(0, 132, 137);
+    perspective-origin: 103.5px 11px;
+    transform-origin: 103.5px 11px;
+    font: normal normal 600 normal 16px / 22px Circular, -apple-system, system-ui, Roboto,
+      'Helvetica Neue', sans-serif;
+  }
+  
+  .modal {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 32px;
+    top: 120px;
+    left: 40px;
+    right: 40px;
+    bottom: 120px;
+    margin: 0 auto;
+    height: 600px;
+    width: 700px;
+    border: 0px;
+    outline: none;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  #break {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    color: rgb(72, 72, 72);
+    height: 1px;
+    text-decoration: none solid rgb(72, 72, 72);
+    text-size-adjust: 100%;
+    width: 595.328px;
+    column-rule-color: rgb(72, 72, 72);
+    perspective-origin: 297.656px 0.5px;
+    transform-origin: 297.656px 0.5px;
+    caret-color: rgb(72, 72, 72);
+    border-top: 0px none rgb(72, 72, 72);
+    border-right: 0px none rgb(72, 72, 72);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    border-left: 0px none rgb(72, 72, 72);
+    font: normal normal 400 normal 14px / 20.02px Circular, 'Helvetica Neue', Helvetica, Arial,
+      sans-serif;
+    outline: rgb(72, 72, 72) none 0px;
+  }
+  /* } #DIV_1 */
+  
+.button{
+    background: url(/pics/cross.png) no-repeat;
+    cursor:pointer;
+    border: none;
+}
+
+.fieldset{
+    border: aliceblue;
+}
+
+.reviewExitModal{
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewExitchild {
+    width: 30%;
+}
+
+.reviewColor {
+    width: 50px;
+    background: #26d069;
+    border-radius: 18px;
+}
+.reviewBackColor {
+    color: #26d069;
+}
+
+.reviewCircleBtnParent {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reviewCircleBtn {
+    background: #26d069;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+

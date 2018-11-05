@@ -177,77 +177,77 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import ReactModal from 'react-modal';
-//ReactModal.setAppElement('#app');
+// ReactModal.setAppElement('#app');
 &nbsp;
 &nbsp;
 function Report(props) {
-    return (
-      &lt;div&gt;
-        &lt;ReactModal
-          isOpen={props.showModal}
-          contentLabel="Contact"
-          onRequestClose={props.handleCloseModal}
-          className="modal"
-          overlayClassName="overlay"
-        &gt;
-          &lt;div&gt;
-              &lt;img src="pics/cross.png" width="50" height="50" onClick={props.handleCloseModal}/&gt;
-            &lt;h3 className="font"&gt;Do you want to anonymously report this review?&lt;/h3&gt;
-            &lt;h5 className="font"&gt;If so, please choose one of the following reasons. Learn more&lt;/h5&gt;
-            &lt;br/&gt;
-            &lt;form&gt;
-              &lt;fieldset className="fieldset"&gt;
-                &lt;legend &gt;Select a maintenance drone&lt;/legend&gt;
-                &lt;div className="reviewExitModal"&gt;
-                  &lt;label className="reviewExitchild" for="huey"&gt;Inappropriate Content&lt;/label&gt;
-                  &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
-                  &lt;input className="reviewExitchild" type="radio" id="huey" name="drone" value="huey" checked /&gt;
-                &lt;/div&gt;
-                &lt;div&gt;This review contains violent, graphic, promotional, or otherwise offensive content.&lt;/div&gt;
-                &lt;div className='reviewParentLine'&gt;
-                  &lt;div className='reviewLine'&gt;&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div className="reviewExitModal"&gt;
-                  &lt;label className="reviewExitchild" for="dewey"&gt;Dishonest or hateful content&lt;/label&gt;
-                  &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
-                  &lt;input className="reviewExitchild" type="radio" id="dewey" name="drone" value="dewey" /&gt; 
-                &lt;/div&gt;
-                &lt;div&gt;This review is purposefully malicious and assaulting.&lt;/div&gt;
-                &lt;div className='reviewParentLine'&gt;
-                  &lt;div className='reviewLine'&gt;&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div className="reviewExitModal"&gt;
-                  &lt;label className="reviewExitchild" for="louie"&gt;Fake content&lt;/label&gt;
-                  &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
-                  &lt;input className="reviewExitchild" type="radio" id="louie" name="drone" value="louie" /&gt;
-                &lt;/div&gt;
-                &lt;div&gt;This review contains false information or may be fake.&lt;/div&gt;
-                &lt;div className='reviewParentLine'&gt;
-                  &lt;div className='reviewLine'&gt;&lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/fieldset&gt;
+  return (
+    &lt;div&gt;
+      &lt;ReactModal
+        isOpen={props.showModal}
+        contentLabel="Contact"
+        onRequestClose={props.handleCloseModal}
+        className="modal"
+        overlayClassName="overlay"
+      &gt;
+        &lt;div&gt;
+          &lt;img src="pics/cross.png" width="50" height="50" onClick={props.handleCloseModal} /&gt;
+          &lt;h3 className="font"&gt;Do you want to anonymously report this review?&lt;/h3&gt;
+          &lt;h5 className="font"&gt;If so, please choose one of the following reasons. Learn more&lt;/h5&gt;
+          &lt;br /&gt;
+          &lt;form&gt;
+            &lt;fieldset className="fieldset"&gt;
+              &lt;legend&gt;Select a maintenance drone&lt;/legend&gt;
               &lt;div className="reviewExitModal"&gt;
-                &lt;div className="reviewExitchild reviewBackColor" onClick={props.handleCloseModal}&gt;Back&lt;/div&gt;
-                &lt;div className="reviewExitchild"&gt;&lt;/div&gt;
-                &lt;button className="reviewExitchild reviewColor" onClick={props.handleCloseModal}&gt;Submit&lt;/button&gt;
+                &lt;label className="reviewExitchild" htmlFor="huey"&gt;Inappropriate Content&lt;/label&gt;
+                &lt;div className="reviewExitchild" /&gt;
+                &lt;input className="reviewExitchild" type="radio" id="huey" name="drone" value="huey" checked /&gt;
               &lt;/div&gt;
-                
-              &lt;/form&gt;
+              &lt;div&gt;This review contains violent, graphic, promotional, or otherwise offensive content.&lt;/div&gt;
+              &lt;div className="reviewParentLine"&gt;
+                &lt;div className="reviewLine" /&gt;
+              &lt;/div&gt;
+              &lt;div className="reviewExitModal"&gt;
+                &lt;label className="reviewExitchild" htmlFor="dewey"&gt;Dishonest or hateful content&lt;/label&gt;
+                &lt;div className="reviewExitchild" /&gt;
+                &lt;input className="reviewExitchild" type="radio" id="dewey" name="drone" value="dewey" /&gt;
+              &lt;/div&gt;
+              &lt;div&gt;This review is purposefully malicious and assaulting.&lt;/div&gt;
+              &lt;div className="reviewParentLine"&gt;
+                &lt;div className="reviewLine" /&gt;
+              &lt;/div&gt;
+              &lt;div className="reviewExitModal"&gt;
+                &lt;label className="reviewExitchild" htmlFor="louie"&gt;Fake content&lt;/label&gt;
+                &lt;div className="reviewExitchild" /&gt;
+                &lt;input className="reviewExitchild" type="radio" id="louie" name="drone" value="louie" /&gt;
+              &lt;/div&gt;
+              &lt;div&gt;This review contains false information or may be fake.&lt;/div&gt;
+              &lt;div className="reviewParentLine"&gt;
+                &lt;div className="reviewLine" /&gt;
+              &lt;/div&gt;
+            &lt;/fieldset&gt;
+            &lt;div className="reviewExitModal"&gt;
+              &lt;div className="reviewExitchild reviewBackColor" onClick={props.handleCloseModal}&gt;Back&lt;/div&gt;
+              &lt;div className="reviewExitchild" /&gt;
+              &lt;button className="reviewExitchild reviewColor" onClick={props.handleCloseModal}&gt;Submit&lt;/button&gt;
+            &lt;/div&gt;
 &nbsp;
-          &lt;/div&gt;
-        &lt;/ReactModal&gt;
-      &lt;/div&gt;
-    );
-  }
-  
-  export default Report;
+          &lt;/form&gt;
+&nbsp;
+        &lt;/div&gt;
+      &lt;/ReactModal&gt;
+    &lt;/div&gt;
+  );
+}
+&nbsp;
+export default Report;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 02 2018 16:21:15 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Nov 03 2018 15:23:24 GMT-0700 (PDT)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

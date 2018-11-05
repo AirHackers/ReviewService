@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541200875352" clover="3.2.0">
-  <project timestamp="1541200875352" name="All files">
-    <metrics statements="56" coveredstatements="45" conditionals="4" coveredconditionals="2" methods="24" coveredmethods="18" elements="84" coveredelements="65" complexity="0" loc="56" ncloc="56" packages="2" files="8" classes="8">
+<coverage generated="1541283804322" clover="3.2.0">
+  <project timestamp="1541283804323" name="All files">
+    <metrics statements="55" coveredstatements="45" conditionals="4" coveredconditionals="2" methods="23" coveredmethods="17" elements="82" coveredelements="64" complexity="0" loc="55" ncloc="55" packages="2" files="8" classes="8">
       <package name="client.src.components">
-        <metrics statements="55" coveredstatements="44" conditionals="4" coveredconditionals="2" methods="24" coveredmethods="18"/>
+        <metrics statements="54" coveredstatements="44" conditionals="4" coveredconditionals="2" methods="23" coveredmethods="17"/>
         <file name="app.jsx" path="/Users/mina/Documents/HR105/FECproject/client/src/components/app.jsx">
-          <metrics statements="29" coveredstatements="23" conditionals="4" coveredconditionals="2" methods="10" coveredmethods="7"/>
+          <metrics statements="28" coveredstatements="23" conditionals="4" coveredconditionals="2" methods="10" coveredmethods="7"/>
           <line num="9" count="10" type="stmt"/>
           <line num="10" count="10" type="stmt"/>
           <line num="14" count="10" type="stmt"/>
           <line num="15" count="10" type="stmt"/>
           <line num="16" count="10" type="stmt"/>
           <line num="17" count="10" type="stmt"/>
-          <line num="20" count="1" type="stmt"/>
-          <line num="21" count="1" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
+          <line num="21" count="10" type="stmt"/>
           <line num="25" count="1" type="stmt"/>
           <line num="26" count="1" type="stmt"/>
           <line num="27" count="1" type="stmt"/>
-          <line num="30" count="10" type="stmt"/>
-          <line num="33" count="1" type="stmt"/>
-          <line num="34" count="1" type="stmt"/>
-          <line num="35" count="1" type="stmt"/>
-          <line num="39" count="0" type="stmt"/>
-          <line num="40" count="0" type="stmt"/>
-          <line num="41" count="0" type="stmt"/>
-          <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="44" count="0" type="stmt"/>
-          <line num="50" count="11" type="stmt"/>
-          <line num="51" count="11" type="stmt"/>
-          <line num="55" count="0" type="stmt"/>
-          <line num="62" count="15" type="cond" truecount="2" falsecount="0"/>
-          <line num="63" count="2" type="stmt"/>
-          <line num="64" count="2" type="stmt"/>
-          <line num="66" count="13" type="stmt"/>
-          <line num="68" count="15" type="stmt"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="41" count="11" type="stmt"/>
+          <line num="42" count="11" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="52" count="1" type="stmt"/>
+          <line num="53" count="1" type="stmt"/>
+          <line num="54" count="1" type="stmt"/>
+          <line num="58" count="1" type="stmt"/>
+          <line num="59" count="1" type="stmt"/>
+          <line num="60" count="1" type="stmt"/>
+          <line num="66" count="15" type="cond" truecount="2" falsecount="0"/>
+          <line num="67" count="2" type="stmt"/>
+          <line num="68" count="2" type="stmt"/>
+          <line num="75" count="13" type="stmt"/>
+          <line num="77" count="15" type="stmt"/>
         </file>
         <file name="buttomreviewpart.jsx" path="/Users/mina/Documents/HR105/FECproject/client/src/components/buttomreviewpart.jsx">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-          <line num="5" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
           <line num="6" count="1" type="stmt"/>
-          <line num="7" count="1" type="stmt"/>
         </file>
         <file name="report.jsx" path="/Users/mina/Documents/HR105/FECproject/client/src/components/report.jsx">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -48,36 +47,36 @@
         </file>
         <file name="reviewtotalnumber.jsx" path="/Users/mina/Documents/HR105/FECproject/client/src/components/reviewtotalnumber.jsx">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="4" count="4" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
           <line num="5" count="1" type="stmt"/>
         </file>
         <file name="searchbar.jsx" path="/Users/mina/Documents/HR105/FECproject/client/src/components/searchbar.jsx">
-          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-          <line num="5" count="2" type="stmt"/>
-          <line num="8" count="2" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
+          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
         </file>
         <file name="starpresentation.jsx" path="/Users/mina/Documents/HR105/FECproject/client/src/components/starpresentation.jsx">
           <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
           <line num="6" count="1" type="stmt"/>
           <line num="7" count="1" type="stmt"/>
           <line num="11" count="1" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="18" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
           <line num="19" count="1" type="stmt"/>
-          <line num="20" count="0" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="23" count="0" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
-          <line num="26" count="1" type="stmt"/>
-          <line num="30" count="3" type="stmt"/>
-          <line num="32" count="0" type="stmt"/>
-          <line num="33" count="0" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="32" count="3" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
         </file>
         <file name="topreviewbar.jsx" path="/Users/mina/Documents/HR105/FECproject/client/src/components/topreviewbar.jsx">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="6" count="4" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
           <line num="7" count="1" type="stmt"/>
         </file>
       </package>

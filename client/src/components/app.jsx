@@ -3,8 +3,9 @@ import $ from 'jquery';
 import TopReviewBar from './topreviewbar';
 import ButtomReviewPart from './buttomreviewpart';
 import Report from './report';
+//import CircleBtn from './circlebtn';
 
-class App extends React.Component {
+class Reviewapp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,18 +16,6 @@ class App extends React.Component {
     this.onSearchhandle = this.onSearchhandle.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
-  }
-
-  handleOpenModal() {
-    const newState = this.state;
-    newState.showModal = true;
-    this.setState(newState);
-  }
-
-  handleCloseModal() {
-    const newState = this.state;
-    newState.showModal = false;
-    this.setState(newState);
   }
 
   componentDidMount() {
@@ -60,12 +49,29 @@ class App extends React.Component {
     });
   }
 
+  handleOpenModal() {
+    const newState = this.state;
+    newState.showModal = true;
+    this.setState(newState);
+  }
+
+  handleCloseModal() {
+    const newState = this.state;
+    newState.showModal = false;
+    this.setState(newState);
+  }
+
   render() {
     let topPart;
     let bottomPart;
     if (this.state.data) {
       topPart = <TopReviewBar data={this.state.data[0]} onSearchhandle={this.onSearchhandle} />;
-      bottomPart = <ButtomReviewPart data={this.state.data} handleOpenModal={this.handleOpenModal} />;
+      bottomPart = (
+        <ButtomReviewPart
+          data={this.state.data}
+          handleOpenModal={this.handleOpenModal}
+        />
+      );
     } else {
       topPart = <div>Loading...</div>;
     }
@@ -79,8 +85,9 @@ class App extends React.Component {
           handleOpenModal={this.handleOpenModal}
           handleCloseModal={this.handleCloseModal}
         />
+        {/* <CircleBtn /> */}
       </div>
     );
   }
 }
-export default App;
+export default Reviewapp;
