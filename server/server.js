@@ -22,7 +22,6 @@ app.get('/api/homes/:homeID/allReviews', (req, res) => {
     if (err) {
       throw err;
     } else {
-      allowCORS(res);
       res.send(result);
     }
   });
