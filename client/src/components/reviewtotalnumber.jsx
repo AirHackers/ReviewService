@@ -3,11 +3,10 @@ import React from 'react';
 
 const TopBarTotalNumber = props => (
   <div className="reviewColumn reviewTotalNumParent">
-    <h2 className="reviewTotalNumber">
+    <h3 className="reviewTotalNumber">
       {props.totalNumber}
-      {' '}
 &nbsp; Reviews
-    </h2>
+    </h3>
   </div>
 );
 
