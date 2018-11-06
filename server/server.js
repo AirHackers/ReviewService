@@ -17,11 +17,11 @@ const allowCORS = function (res) {
 };
 
 app.get('/api/homes/:homeID/allReviews', (req, res) => {
-  //console.log("NOWWW", req.get('host'));
   db.getData(req.params.homeID, (err, result) => {
     if (err) {
       throw err;
     } else {
+      allowCORS(res);
       res.send(result);
     }
   });
