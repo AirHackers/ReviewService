@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 // ReactModal.setAppElement('#app');
+const SERVER = 'http://localhost:3003/homes/0';
 
 
 function Report(props) {
@@ -14,7 +15,7 @@ function Report(props) {
         overlayClassName="overlay"
       >
         <div>
-          <img src="pics/cross.png" width="50" height="50" onClick={props.handleCloseModal} />
+          <img src={`${SERVER}/pics/cross.png`} width="50" height="50" onClick={props.handleCloseModal} />
           <h3 className="font">Do you want to anonymously report this review?</h3>
           <h5 className="font">If so, please choose one of the following reasons. Learn more</h5>
           <br />
