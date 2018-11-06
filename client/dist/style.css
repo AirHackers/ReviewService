@@ -221,3 +221,8 @@
     height: 30px;
 }
 
+.reviewContainer{
+    /* display: flex; */
+    width: 70%;
+}
+

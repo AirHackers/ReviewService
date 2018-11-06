@@ -78,7 +78,7 @@ class Reviewapp extends React.Component {
       topPart = <div>Loading...</div>;
     }
     return (
-      <div>
+      <div className="reviewContainer">
         {topPart}
         <br />
         {bottomPart}
