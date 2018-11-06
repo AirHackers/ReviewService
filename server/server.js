@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/homes/:homeID/', express.static(`${__dirname}./../client/dist/`));
+app.use('/homes/:homeId/', express.static(`${__dirname}./../client/dist/`));
 
 app.get('/api/homes/:homeID/allReviews', (req, res) => {
   db.getData(req.params.homeID, (err, result) => {
