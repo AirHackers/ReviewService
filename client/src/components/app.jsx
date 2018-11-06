@@ -3,7 +3,7 @@ import $ from 'jquery';
 import TopReviewBar from './topreviewbar';
 import ButtomReviewPart from './buttomreviewpart';
 import Report from './report';
-//import CircleBtn from './circlebtn';
+// import CircleBtn from './circlebtn';
 
 class Reviewapp extends React.Component {
   constructor(props) {
@@ -24,10 +24,10 @@ class Reviewapp extends React.Component {
 
   onSearchhandle(text) {
     let searchedData = [];
-    const param = window.location.href.slice(28, -1);
+    const params = window.location.href.split('/');
     $.ajax({
       method: 'Get',
-      url: `http://localhost:3003/api/homes/${param}/allReviews`,
+      url: `http://localhost:3003/api/homes/${params[params.length - 2]}/allReviews`,
       success: (data) => {
         this.setState({ data });
         searchedData = this.state.data.filter(item => item.review.includes(text));
@@ -40,10 +40,10 @@ class Reviewapp extends React.Component {
   }
 
   getData() {
-    const param = window.location.href.slice(28, -1);
+    const params = window.location.href.split('/');
     $.ajax({
       method: 'Get',
-      url: `http://localhost:3003/api/homes/${param}/allReviews`,
+      url: `http://localhost:3003/api/homes/${params[params.length - 2]}/allReviews`,
       success: (data) => {
         console.log(data);
         this.setState({ data });
