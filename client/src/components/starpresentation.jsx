@@ -1,5 +1,6 @@
 import React from 'react';
 
+const SERVER = 'http://localhost:3003/homes/0';
 
 class RateStarPresentation extends React.Component {
   constructor(props) {
@@ -19,10 +20,10 @@ class RateStarPresentation extends React.Component {
     const fullStars = [];
     const emptyStars = [];
     for (let i = 0; i < this.props.rate; i += 1) {
-      fullStars.push(<img alt="hi" src="pics/star.png" height="20" width="20" />);
+    fullStars.push(<img alt="hi" src={`${SERVER}/pics/star.png`} height="20" width="20" />);
     }
     for (let i = 0; i < 5 - this.props.rate; i += 1) {
-      emptyStars.push(<img alt="hi" src="pics/Star_empty.png" height="20" width="20" />);
+      emptyStars.push(<img alt="hi" src={`${SERVER}/pics/Star_empty.png`} height="20" width="20" />);
     }
     this.setState({ fullStars });
     this.setState({ emptyStars });

@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React from 'react';
 
+const SERVER = 'http://localhost:3003/homes/0';
+
 const ButtomReviewPart = props => (
   props.data.map(item => (
     <div key={item.id} className="reviewBottomParent">
@@ -12,7 +14,7 @@ const ButtomReviewPart = props => (
           <div className="reviewBesidePhoto font date">{item.createdAt}</div>
         </div>
         <div className="reviewUserImgPartCol reviewSpace" />
-        <img alt="hi" className="reviewUserImgPartCol reviewUserImgFlag" src="pics/flag3.png" onClick={props.handleOpenModal} />
+        <img alt="hi" className="reviewUserImgPartCol reviewUserImgFlag" src={`${SERVER}/pics/flag3.png`} onClick={props.handleOpenModal} />
       </div>
       <br />
       <div className="reviewReview font">
