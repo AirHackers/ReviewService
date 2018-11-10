@@ -1,5 +1,6 @@
 import React from 'react';
-const SERVER = 'http://localhost:3003/homes/0';
+const SERVER = 'http://ec2-18-222-214-168.us-east-2.compute.amazonaws.com:3003/homes/0/';
+//'http://localhost:3003/homes/0';
 
 class RateStarPresentation extends React.Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 // ReactModal.setAppElement('#app');
-const SERVER = 'http://localhost:3003/homes/0';
+const SERVER = 'http://ec2-18-222-214-168.us-east-2.compute.amazonaws.com:3003/homes/0/';
 
 
 function Report(props) {
