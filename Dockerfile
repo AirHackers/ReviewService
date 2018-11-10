@@ -8,7 +8,6 @@ COPY . /source/app
 
 RUN npm install --only=production
 RUN npm run seed
-RUN npm run build
 
 
 
