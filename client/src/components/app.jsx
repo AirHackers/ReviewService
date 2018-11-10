@@ -27,7 +27,7 @@ class Reviewapp extends React.Component {
     const params = window.location.href.split('/');
     $.ajax({
       method: 'Get',
-      url: `http://localhost:3003/api/homes/${params[params.length - 2]}/allReviews`,
+      url: `http://ec2-18-222-214-168.us-east-2.compute.amazonaws.com:3003/api/homes/${params[params.length - 2]}/allReviews`,
       success: (data) => {
         this.setState({ data });
         searchedData = this.state.data.filter(item => item.review.includes(text));
@@ -43,7 +43,7 @@ class Reviewapp extends React.Component {
     const params = window.location.href.split('/');
     $.ajax({
       method: 'Get',
-      url: `http://localhost:3003/api/homes/${params[params.length - 2]}/allReviews`,
+      url: `http://ec2-18-222-214-168.us-east-2.compute.amazonaws.com:3003/api/homes/${params[params.length - 2]}/allReviews`,
       success: (data) => {
         console.log(data);
         this.setState({ data });
